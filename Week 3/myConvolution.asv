@@ -1,0 +1,15 @@
+function Iout = myConvolution(Iin, B)
+%UNTITLED2 Summary of this function goes here
+%   Detailed explanation goes here
+[rows, cols] = size(Iin);
+[mRows, mCols] = size(B);
+for i=1:rows
+    for j=1: cols
+        for k=i:i+mRows
+            for l=j:j+mCols
+                out = out + Iin(i,j) *
+            end
+        end
+    end
+end
+end
