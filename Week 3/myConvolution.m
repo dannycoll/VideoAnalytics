@@ -12,7 +12,7 @@ for i=1:rows-mRows
                 out = out + Iin(i+k-1,j+l-1) * B(k,l);
             end
         end
-        Iout(i,j) = out;
+        Iout(i,j) = uint8(out);
     end
 end
 end

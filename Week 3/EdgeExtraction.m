@@ -4,5 +4,5 @@ function [Edges, Ihor, Iver] = EdgeExtraction(Iin, B1, B2)
 Iver = conv2(Iin, B1);
 Ihor = conv2(Iin, B2);
 
-Edges = sqrt(Iver*Iver + Ihor*Ihor);
+Edges = sqrt((Iver.*Iver) + (Ihor.*Ihor));
 end
